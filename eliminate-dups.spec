@@ -12,7 +12,6 @@ Group:		Networking/Mail
 Source:		%{name}-%{version}.tar.bz2
 Patch:		%{name}.patch.bz2
 Requires:	perl
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 Buildrequires:  perl-MD5
 
