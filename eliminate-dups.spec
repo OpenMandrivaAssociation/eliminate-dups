@@ -30,18 +30,18 @@ duplicate messages.
 %build
 [ -n "%{buildroot}" -a "%{buildroot}" != / ] && rm -rf %{buildroot}
 mkdir -p %{buildroot}
-mv $RPM_BUILD_DIR/%{name}-%{version}/Makefile.dist $RPM_BUILD_DIR/%{name}-%{version}/Makefile
+mv %{_builddir}/%{name}-%{version}/Makefile.dist %{_builddir}/%{name}-%{version}/Makefile
 make
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 mkdir -p %{buildroot}/var/qmail/bin
-install -m 755 $RPM_BUILD_DIR/%{name}-%{version}/%{name} %{buildroot}%{qdir}/bin
+install -m 755 %{_builddir}/%{name}-%{version}/%{name} %{buildroot}%{qdir}/bin
 
 %clean
 [ -n "%{buildroot}" -a "%{buildroot}" != / ] && rm -rf %{buildroot}
-rm -rf $RPM_BUILD_DIR/%{name}-%{version}
+rm -rf %{_builddir}/%{name}-%{version}
 
 
 %files 
