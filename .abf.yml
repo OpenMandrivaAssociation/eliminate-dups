@@ -1,2 +1,3 @@
 sources:
-  "eliminate-dups-1.2.tar.bz2:"	d01b3ba0b5ae50ae5a1154ffbefbbe5e3b162285
+  "eliminate-dups-1.2.tar.bz2": d01b3ba0b5ae50ae5a1154ffbefbbe5e3b162285
+  "eliminate-dups.patch.bz2": abff52e9ca7dee589a9cd694b08fe566c5364e31
