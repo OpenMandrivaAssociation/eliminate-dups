@@ -1,6 +1,6 @@
 %define name eliminate-dups
 %define version 1.2
-%define release %mkrel 12
+%define release 13
 %define qdir /var/qmail
 
 Name:		%{name}
