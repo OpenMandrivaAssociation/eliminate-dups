@@ -14,6 +14,7 @@ Patch:		%{name}.patch.bz2
 Requires:	perl
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
+BuildRequires:	make
 Buildrequires:  perl-MD5
 
 %description
